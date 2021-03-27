@@ -1,8 +1,7 @@
 
 import './App.css';
-import './homepage.style.scss'
 
-import Homepage from './homepage.component.jsx';
+import Homepage from './components/pages/homepage.component.jsx';
 
 function App() {
   return (
