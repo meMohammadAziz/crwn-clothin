@@ -1,12 +1,24 @@
+import "./App.css";
+import { Route , Switch } from "react-router-dom";
 
-import './App.css';
+import Homepage from "./components/pages/homepage.component.jsx";
 
-import Homepage from './components/pages/homepage.component.jsx';
+const hatPage = () => {
+  return (
+    <div>
+      <h1>Hats Page</h1>
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="pokimon">
-      <Homepage></Homepage>
+    <div>
+      <Switch>
+      <Route exact  path = '/' component = {Homepage}></Route>
+      <Route  path = '/hats' component = {hatPage}></Route>
+      </Switch>
+
     </div>
   );
 }
